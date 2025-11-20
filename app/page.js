@@ -35,7 +35,80 @@ export default function Home() {
             fontSize: '14px',
           }}
         >
-          Yakında buraya filtreler gelecek...
+          {/* Zaman Aralığı Filtresi */}
+<div style={{ marginBottom: '24px' }}>
+  <label style={{ fontWeight: '600', fontSize: '14px' }}>
+    Zaman Aralığı
+  </label>
+
+  <select
+    style={{
+      width: '100%',
+      padding: '8px',
+      marginTop: '8px',
+      backgroundColor: '#1F2937',
+      color: 'white',
+      borderRadius: '6px',
+      border: '1px solid #4B5563',
+    }}
+  >
+    <option value="7">Son 7 Gün</option>
+    <option value="30">Son 30 Gün</option>
+    <option value="90">Son 90 Gün</option>
+    <option value="365">Son 1 Yıl</option>
+  </select>
+</div>
+
+{/* Ülke Filtresi */}
+<div style={{ marginBottom: '24px' }}>
+  <label style={{ fontWeight: '600', fontSize: '14px' }}>
+    Ülke
+  </label>
+
+  <select
+    style={{
+      width: '100%',
+      padding: '8px',
+      marginTop: '8px',
+      backgroundColor: '#1F2937',
+      color: 'white',
+      borderRadius: '6px',
+      border: '1px solid #4B5563',
+    }}
+  >
+    <option value="TR">Türkiye</option>
+    <option value="US">Amerika</option>
+    <option value="DE">Almanya</option>
+    <option value="IN">Hindistan</option>
+    <option value="BR">Brezilya</option>
+  </select>
+</div>
+
+{/* Kategori Filtresi */}
+<div style={{ marginBottom: '24px' }}>
+  <label style={{ fontWeight: '600', fontSize: '14px' }}>
+    Kategori
+  </label>
+
+  <select
+    style={{
+      width: '100%',
+      padding: '8px',
+      marginTop: '8px',
+      backgroundColor: '#1F2937',
+      color: 'white',
+      borderRadius: '6px',
+      border: '1px solid #4B5563',
+    }}
+  >
+    <option value="all">Tümü</option>
+    <option value="music">Music</option>
+    <option value="gaming">Gaming</option>
+    <option value="news">News</option>
+    <option value="sports">Sports</option>
+  </select>
+</div>
+
         </p>
       </aside>
 
